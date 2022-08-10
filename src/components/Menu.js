@@ -1,4 +1,5 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -13,7 +14,9 @@ const Menu = () => {
       <a className="social" href="https://www.github.com/joaocorner">
         <BsGithub size={24} color="#fff" />
       </a>
-      <p className="menu-item">My Links</p>
+      <Link to="/links" className="menu-item">
+        My Links
+      </Link>
     </div>
   );
 };
