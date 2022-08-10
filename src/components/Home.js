@@ -1,4 +1,5 @@
 import { FiLink } from "react-icons/fi";
+import Menu from "./Menu";
 
 const Home = ({ title }) => {
   return (
@@ -15,6 +16,7 @@ const Home = ({ title }) => {
         </div>
         <button>Shorten</button>
       </div>
+        <Menu className="menu-item" />
     </div>
   );
 };
