@@ -1,22 +1,24 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import LinkMenu from "./LinkMenu";
 
 const Menu = () => {
   return (
     <div className="menu">
-      <a
-        className="social"
-        href="https://www.linkedin.com/in/joaoeduardocorner"
-      >
-        <BsLinkedin size={24} color="#fff" />
-      </a>
-
-      <a className="social" href="https://www.github.com/joaocorner">
-        <BsGithub size={24} color="#fff" />
-      </a>
-      <Link to="/links" className="menu-item">
-        My Links
-      </Link>
+      <LinkMenu
+        classname2={"social"}
+        text={<BsLinkedin size={24} color="#fff" />}
+        link="https://www/in/joaoeduardocorner"
+      />
+      <LinkMenu
+        classname2={"social"}
+        text={<BsGithub size={24} color="#fff" />}
+        link="https://www.github.com/joaocorner"
+      />
+      <LinkMenu
+        classname2={"menu-item"}
+        text={"My Links"}
+        link="/links"
+      />
     </div>
   );
 };
